@@ -1,0 +1,116 @@
+@import "../../../styles-variables";
+
+.signin-header-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 150px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    background-color: #301d44e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+.signin-content-container {
+  width: 80%;
+  margin-inline: auto;
+  background-color: #fff;
+  .signin-title-container {
+    width: 100%;
+    margin: 30px auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .signin-title {
+      font-size: 38px;
+      line-height: 1.3;
+      margin-bottom: 0;
+      color: #301d44;
+      font-weight: 700;
+    }
+    .topTitle {
+      text-align: center;
+      max-width: 50%;
+      margin-bottom: 10px;
+      line-height: 1.7;
+      color: #6c6377;
+    }
+  }
+
+  .signin-form-container {
+    max-width: 650px;
+    padding: 40px 50px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0 0 20px #d8d8d8;
+    margin-bottom: 40px;
+
+    .signin-form {
+      
+      .signin-form-item {
+        margin-bottom: 25px;
+        .formitem {
+          width: 100%;
+          height: 55px;
+          padding: 6px 20px;
+          font-size: 14px;
+          background: #fbfbfb;
+          border: 1px solid #efefef;
+          border-radius: 0;
+          box-shadow: none;
+          color: #6c6377;
+        }
+      }
+      .signin-form-check {
+        display: block;
+        min-height: 1.5rem;
+        padding-left: 1.5em;
+        text-align: center !important;
+        margin-bottom: 25px;
+        color: #6c6377;
+        .form-check-input {
+          float: left;
+          margin-left: -1.5em;
+        }
+      }
+      .signin-form-accept {
+        text-align: center;
+        .signin-form-btn {
+          background-color: #f7941d;
+          color: #fff;
+          display: inline-block;
+          padding: 15px 30px;
+          border-radius: 2px;
+          border: 1px solid #f7941d;
+          margin-top: 5px;
+          font-weight: 500;
+          &:hover {
+            background-color: #8732de;
+            border: 1px solid #8732de;
+          }
+        }
+        p {
+          margin-top: 20px;
+          line-height: 1.7;
+          color: #6c6377;
+        }
+      }
+    }
+  }
+}

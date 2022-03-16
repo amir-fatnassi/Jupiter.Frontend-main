@@ -1,0 +1,7 @@
+@use '@angular/material' as mat;
+
+$jptr-primary: mat.define-palette(mat.$indigo-palette, 800, 300, 900);
+$jptr-accent: mat.define-palette(mat.$light-blue-palette);
+$jptr-warn: mat.define-palette(mat.$pink-palette, 600);
+
+$jptr-theme: mat.define-light-theme($jptr-primary, $jptr-accent, $jptr-warn);

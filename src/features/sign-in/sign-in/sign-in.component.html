@@ -1,0 +1,55 @@
+<div class="signin-header-container">
+    <img [src]="banner" alt="hero" class="hero-img" />
+    <div class="hero-section">
+      <h1>Sign In</h1>
+      <span>Home / Sign In</span>
+    </div>
+  </div>
+  
+  <div class="signin-content-container">
+    <div class="signin-title-container">
+      <h2 class="signin-title">Sign in to Your Account!</h2>
+      <p class="topTitle">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor rem
+        laborum tempore provident, sequi quod exercitationem expedita itaque
+        dolorem nobis reiciendis iure
+      </p>
+    </div>
+    <div class="signin-form-container">
+      <form action="" class="signin-form">
+        <div class="signin-form-item">
+          <input
+            _ngcontent-pla-c10=""
+            type="text"
+            name="name"
+            id="name"
+            required=""
+            placeholder="Username or Email"
+            [(ngModel)] = "user.email"
+            class="formitem"
+          />
+        </div>
+        <div class="signin-form-item">
+          <input
+            _ngcontent-pla-c10=""
+            type="password"
+            name="name"
+            id="name"
+            required=""
+            placeholder="Password"
+            [(ngModel)] = "user.password"
+            class="formitem"
+          />
+        </div>
+        <div class="signin-form-check">
+          <input  type="checkbox" id="exampleCheck1" class="form-check-input">
+          <label  for="exampleCheck1" class="form-check-label">Remember me</label>
+        </div>
+        <div class="signin-form-accept">
+          <button class="signin-form-btn" (click)="signin()">Send Message</button>
+          <p>Not a member? <span style="color: #F7941D; cursor: pointer;" routerLink="../signup">{{ 'jptr.menu.sign-up' | translate }}</span> </p>
+        </div>
+      </form>
+    </div>
+  </div>
+  

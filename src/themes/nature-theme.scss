@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+
+$jptr-nature-primary: mat.define-palette(mat.$brown-palette, 700, 300, 900);
+$jptr-nature-accent: mat.define-palette(mat.$deep-purple-palette, 300);
+$jptr-nature-warn: mat.define-palette(mat.$red-palette, 600);
+
+$jptr-nature-theme: mat.define-light-theme(
+  $jptr-nature-primary,
+  $jptr-nature-accent,
+  $jptr-nature-warn
+);
